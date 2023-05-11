@@ -1,0 +1,68 @@
+h1{
+    display: inline-flex;
+}
+.container{
+    padding: 50px;
+    width: 100px;
+    height: 80px;
+    margin-top: 200px;
+    margin-left: 200px;
+    background: #000;
+}
+.container:hover .h {
+    color: blue;
+    animation-name: hello;
+    animation-duration: .8s;
+}
+.container:hover .e{
+    color: yellow;
+    animation-name: hello;
+    animation-duration: 1s;
+}
+.container:hover .l1{
+    color: green;
+    animation-name: hello;
+    animation-duration: 1.2s;
+}
+.container:hover .l2{
+    color: gold;
+    animation-name: hello;
+    animation-duration: 1.4s;
+}
+.container:hover .o{
+    color: red;
+    animation-name: hello;
+    animation-duration: 1.6s;
+}
+.h{
+    color: blue;
+}
+.e{
+    color: yellow;
+}
+.l1{
+    color: green;
+}
+.l2{
+    color: gold;
+}
+.o{
+    color: red;
+}
+@keyframes hello{
+    25%{
+    transform: translateY(-30px);
+        
+    }
+    50%{
+    transform: translateY(-20px);
+
+    }
+    75%{
+    transform: translateY(-10px);
+
+    }
+    100%{
+        transform: translateY(0px);
+        }
+}

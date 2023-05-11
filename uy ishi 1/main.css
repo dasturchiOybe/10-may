@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+}
+
+.container{
+    margin-top: 150px;
+    margin-left: 300px;
+    background: red;
+    height: 130px;
+    padding-top: 10px;
+    width: 280px;
+}
+
+.kub1{
+    width: 30px;
+    height: 30px;
+    background-color: gold;
+    margin-bottom: 10px;
+}
+
+.container:active .kub1{
+    position: absolute;
+    /* transition: all 2s ease-in-out; */
+    animation-name: kub1;
+    animation-duration: .6s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.container:active .kub2{
+    margin-top: 40px;
+    position: absolute;
+    /* transition: all 2s ease-in-out; */
+    animation-name: kub2;
+    animation-duration: .8s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+.container:active .kub3{
+    margin-top: 80px;
+    position: absolute;
+    /* transition: all 2s ease-in-out; */
+    animation-name: kub3;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+
+.kub2{
+    width: 30px;
+    height: 30px;
+    background-color: gold;
+    margin-bottom: 10px;
+}
+
+.kub3{
+    width: 30px;
+    height: 30px;
+    background-color: gold;
+    margin-bottom: 10px;
+}
+
+.kub1::before{
+    content: " ";
+    width: 30px;
+    height: 30px;
+    background-color: rgb(89, 0, 255);
+    opacity: 0.5;
+}
+.kub2::before{
+    content: " ";
+    width: 30px;
+    height: 30px;
+    background-color: rgb(43, 0, 255);
+    opacity: 0.5;
+}
+.kub3::before{
+    content: " ";
+    width: 30px;
+    height: 30px;
+    background-color: rgb(25, 0, 255);
+    opacity: 0.5;
+}
+
+@keyframes kub1 {
+
+    25%{
+        transform: translateX(125px);
+    }
+    35%{
+        transform: translateX(145px);
+    }
+    45%{
+        transform: translateX(165px);
+    }
+    55%{
+        transform: translateX(185px);
+    }
+    65%{
+        transform: translateX(185px);
+    }
+    75%{
+        transform: translateX(185px);
+    }
+    85%{
+        transform: translateX(205px);
+    }
+}
+@keyframes kub2 {
+    
+    25%{
+        transform: translateX(125px);
+    }
+    35%{
+        transform: translateX(145px);
+    }
+    45%{
+        transform: translateX(165px);
+    }
+    55%{
+        transform: translateX(185px);
+    }
+    65%{
+        transform: translateX(185px);
+    }
+    75%{
+        transform: translateX(185px);
+    }
+    85%{
+        transform: translateX(205px);
+    }
+}
+@keyframes kub3 {
+    
+    25%{
+        transform: translateX(125px);
+    }
+    35%{
+        transform: translateX(145px);
+    }
+    45%{
+        transform: translateX(165px);
+    }
+    55%{
+        transform: translateX(185px);
+    }
+     65%{
+        transform: translateX(185px);
+    }
+    75%{
+        transform: translateX(185px);
+     } 
+    85%{
+        transform: translateX(205px);
+    }
+}
