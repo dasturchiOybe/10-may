@@ -1,0 +1,142 @@
+.container{
+    width: 90%;
+    margin: 50px auto;
+    background-color: #222;
+    height: 70vh;
+    position: relative;
+}
+.container .fon {
+    width: 10%;
+    height: 10%;
+    background-color: gold;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    border-radius: 50%;
+    opacity: .4;
+}
+.container .ball {
+    width: 10%;
+    height: 10%;
+    background-color: rgb(43, 255, 0);
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    border-radius: 50%;
+}
+.container:hover .ball{
+    /* transition: all 2s ease; */
+    animation: ball;
+    animation-duration: 2.5s;
+}
+
+@keyframes ball{
+    
+    15%{
+        margin-left: 20%;
+        transform: none;
+
+    }
+    22%{
+        margin-left: 25%;
+        transform: none;
+
+    }
+    28%{
+        margin-left: 35%;
+        transform: none;
+
+    }
+    34%{
+        margin-left:40%;
+        transform: none;
+
+    }
+
+
+
+    /* 91%{
+        margin-left: 42%;
+        transform: rotateX(360deg) rotateY(360deg) scale(.9);
+    }
+    92%{
+        margin-left: 42%;
+        transform: rotateX(360deg) rotateY(360deg) scale(.9);
+    }
+    93%{
+        margin-left: 42%;
+        transform: rotateX(360deg) rotateY(360deg) scale(.9);
+    }
+    94%{
+        margin-left: 42%;
+        transform: rotateX(360deg) rotateY(360deg) scale(.9);
+    }
+    95%{
+        margin-left: 42%;
+        transform: rotateX(360deg) rotateY(360deg) scale(.9);
+    } */
+    35%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+    38%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+    40%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+    42%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+    44%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+    46%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+    48%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+    50%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+    52%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+    54%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+    56%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+    58%{
+        transform:  rotateX(720deg) rotateY(720deg);
+    }
+
+
+
+    55%{
+        margin-left: 55%;
+        transform: none;
+    } 
+     65%{
+        margin-left: 40%;
+        transform: none;
+
+    }
+    75%{
+        margin-left:30%;
+        transform: none;
+
+    }
+    85%{
+        margin-left:25%;
+        transform: none;
+
+    }
+    95%{
+        margin-left:17%;
+        transform: none;
+
+    }
+}
+

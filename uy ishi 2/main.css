@@ -5,8 +5,8 @@ h1{
     padding: 50px;
     width: 100px;
     height: 80px;
-    margin-top: 200px;
-    margin-left: 200px;
+    margin-top: 250px;
+    margin-left: 250px;
     background: #000;
 }
 .container:hover .h {
@@ -60,7 +60,21 @@ h1{
     }
     75%{
     transform: translateY(-10px);
-
+    }
+    80%{
+        transform: translateY(-5px);
+    }
+    90%{
+        transform: translateY(0px);
+    }
+    93%{
+        transform: translateY(0px);
+    }
+    95%{
+        transform: translateY(-5px);
+    }
+    97%{
+        transform: translateY(-2px);
     }
     100%{
         transform: translateY(0px);

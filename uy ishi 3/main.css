@@ -1,0 +1,79 @@
+.container{
+    width: 800px;
+    height: 400px;
+    background: #100746;
+    margin-top: 200px;
+    margin-left: 200px;
+    position: relative;
+}
+body{
+    background-color: rgb(11, 121, 84);
+}
+.kub{
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-color: goldenrod;
+    opacity: .4;
+    /* justify-content: center; */
+    margin: 180px 110px;
+}
+.boll{
+    position: absolute;
+    display: inline-flex;
+    top: 180px;
+    left: 110px;
+    /* margin-top: 180px; */
+    width: 50px;
+    height: 50px;
+    background-color: goldenrod;
+}
+.container:active .boll{
+    animation-name: boll;
+    animation-duration: 1.5s;
+}
+
+@keyframes boll{
+    5%{
+        transform: translateX(120px);
+        border-radius: 7px;
+    }
+    10%{
+        transform: translateX(170px);
+        border-radius: 10px;
+    }
+    20%{
+        transform: translateX(210px);
+        border-radius: 13px;
+    }
+    30%{
+        transform: translateX(280px);
+        border-radius: 18;
+        background-color: #f7f8b0;
+    }
+    40%{
+        transform: translateX(360px);
+        border-radius: 23px;
+        background-color: #fff;
+    }
+    45%{
+        transform: translateX(380px);
+        border-radius: 25px;
+        background-color: #fff;
+    }
+    50%{
+        transform: translateX(400px);
+        border-radius: 25px;
+        background-color: #fff;
+    }
+    55%{
+        transform: translateX(400px);
+        border-radius: 25px;
+        background-color: #fff;
+    }
+    100%{
+        transform: translateX(400px);
+        border-radius: 25px;
+        background-color: #fff;
+    }
+}
